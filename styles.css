@@ -29,6 +29,9 @@
 body {
   overflow: hidden;
 }
+::selection {
+  background: hsla(277, 64%, 61%, 0.61);
+}
 #mobile-img {
   display: none;
 }
@@ -101,4 +104,58 @@ ul li span {
   left: 0;
   top: 0;
   z-index: 1;
+}
+
+/* Media Queries */
+@media (max-width: 376px) {
+  .photo-section {
+    height: 240px;
+  }
+  #mobile-img {
+    display: initial;
+    width: 100%;
+  }
+  #desktop-img {
+    display: none;
+  }
+  .text-section {
+    padding: 20px;
+    align-items: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  p {
+    text-align: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+  }
+  .stats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    flex-direction: column;
+    width: fit-content;
+    justify-content: space-between;
+    height: 200px;
+  }
+  ul li {
+    text-align: center;
+    font-size: 23px;
+  }
+  .card {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 327px;
+    height: 800px;
+  }
 }
