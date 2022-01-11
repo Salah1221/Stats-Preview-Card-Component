@@ -106,6 +106,20 @@ ul li span {
   top: 0;
   z-index: 1;
 }
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+}
+.attribution a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: inherit;
+}
 
 /* Media Queries */
 @media (max-width: 376px) {
@@ -158,5 +172,9 @@ ul li span {
     justify-content: flex-end;
     width: 327px;
     height: 800px;
+  }
+  .attribution {
+    padding: 0 20px;
+    font-size: 9px;
   }
 }
