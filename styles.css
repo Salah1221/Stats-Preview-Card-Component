@@ -88,6 +88,7 @@ ul li span {
   color: var(--stats-heading);
   font-weight: normal;
   font-size: 14px;
+  letter-spacing: 1px;
 }
 .photo-section {
   width: fit-content;
